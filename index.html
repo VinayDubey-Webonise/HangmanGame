@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Crawl task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <header class="container">
+      <h1 class="mainHeader text-primary">Hangman</h1>
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">Home</a>
+          </li>
+        </ul>  
+      </nav>
+    </header>
+    
+    <div class="container formBody">
+    <form action="crawlweb.php" method="GET">
+      <div class="form-group">
+        <label for="text">Secret Word</label>
+        <h2>_ _ _ _ _ _</h2>
+      </div>
+      <div class="form-group">
+        <label for="text">Enter a letter to guess</label>
+        <input type="text" class="form-control" name="crawl_limit">
+      </div>
+      <div class="alert alert-info" role="alert">
+        Attempts Remaining:
+        <Strong>
+            8
+        </Strong>
+      </div>
+      <input type="submit" onclick="isValidAplhabet()" class="btn btn-primary" value="Check">
+    </form>
+    </div>
+
+    <script type="text/javascript" src="./js/script.js" ></script>
+
+  </body>
+</html>
